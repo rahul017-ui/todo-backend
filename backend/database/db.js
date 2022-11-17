@@ -1,7 +1,6 @@
 // connect to db
 const mongoose = require("mongoose");
-var mongoDB = 'mongodb://127.0.0.1/db';
-mongoose.connect(mongoDB);
+mongoose.connect(process.env.MONGODB);
 
 mongoose.Promise = global.Promise;
 var db = mongoose.connection;

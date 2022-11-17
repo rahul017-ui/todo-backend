@@ -1,7 +1,7 @@
 const {task } =require("../model/task");
 const _ = require('lodash');
 const bcrypt = require('bcrypt');
-const { User, validate } = require('../model/user');
+const { User, validate } = require('../model/User.js');
 const Joi = require('joi');
 const jwt = require("jsonwebtoken");
 require('dotenv').config()
